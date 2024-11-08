@@ -1,6 +1,6 @@
-# Zwiggato
+# 🍽️ **YA Cafe - Food Ordering Website** 🍔
 
-Zwiggato is a restaurant discovery app built using React, designed to showcase restaurants based on your location. This project leverages Swiggy's live API, enabling a seamless user experience with a config-driven UI inspired by Akshay Saini's **Namaste React** series.
+Welcome to **YA Cafe**! 🚀 This is your go-to destination for discovering and ordering mouth-watering meals from local spots, inspired by Swiggy's dynamic experience. Dive into a world of deliciousness where your next favorite meal is just a few clicks away! 🍕🍣
 
 ## Key Features
 
@@ -13,35 +13,43 @@ Zwiggato is a restaurant discovery app built using React, designed to showcase r
 - **State Management**: Managed using Redux Toolkit for scalable state handling.
 - **CORS Proxy Server**: Solves cross-origin issues by using a CORS proxy server.
 
-## Tech Stack
+## 🛠️ **Technologies Used**
 
-- **React** with **Parcel** as the bundler.
-- **Babel** for JavaScript transpiling.
-- **Tailwind CSS** for styling.
-- **Redux Toolkit** for state management.
-- **CORS Proxy** to handle API requests.
+### **Frontend**:
+- 🌐 **React.js**: Building an intuitive and dynamic interface.
+- 🛤️ **React Router**: Navigating through different sections effortlessly.
+- 🧩 **Redux Toolkit**: Efficient state management for reliable app interactions.
+- 📦 **React Icons**: Enhancing the visual experience with beautiful icons.
+- 🎨 **Tailwind CSS**: Fast, responsive styling for all screen sizes.
+- 🚀 **Parcel**: A fast and efficient asset bundler for quick setup.
 
 ## Demo
 
-Check out the live demo here: [zwiggato.vercel.app](https://zwiggato.vercel.app)
+Check out the live demo here: [YACAFE.vercel.app](https://yacafe.vercel.app/)
 
 ## Installation
 
 1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/Abhay-04/Zwiggato.git
 
+   ```bash
+   git clone git@github.com:yukthasree6601/ya-cafe-final-main.git
+
+   ```
 
 2. **Install dependencies:**:
+
    ```bash
-   npm install   
+   npm install
+
+   ```
 
 3. **Start the development server:**:
    ```bash
-   npm run start   
+   npm run start
+   ```
 
 
 
-## Contributing
+## 🎊 **Thank You!**
 
-Feel free to fork the repository and contribute by submitting a pull request.
+Thanks for visiting **YA Cafe**! Enjoy your culinary journey, and happy ordering! 🍽️✨ 
