@@ -1,7 +1,12 @@
 import React from "react";
 import ItemList from "./itemList.js";
 
-const RestaurantCategory = ({ data, showItems, setShowIndex, currentIndex }) => {
+const RestaurantCategory = ({
+  data,
+  showItems,
+  setShowIndex,
+  currentIndex,
+}) => {
   // Toggle showItems by checking if the current index matches the passed index
   const handleClicked = () => {
     setShowIndex(currentIndex === data.index ? null : data.index); // Toggle the index
@@ -35,4 +40,3 @@ const RestaurantCategory = ({ data, showItems, setShowIndex, currentIndex }) => 
 };
 
 export default RestaurantCategory;
-

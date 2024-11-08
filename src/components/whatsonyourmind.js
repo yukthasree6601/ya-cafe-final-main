@@ -54,7 +54,7 @@ const Whatsonyourmind = ({ data }) => {
   };
 
   return (
-    <div className="w-[100%] px-20">
+    <div className="w-[80%]  ">
       <h1 className="text-xl sm:text-2xl font-bold text-black my-8 tracking-wide">
         Inspiration for your first order
       </h1>

@@ -6,6 +6,7 @@ import UserContext from "../utils/Usercontext.js";
 import { useSelector } from "react-redux";
 import { FaWifi } from "react-icons/fa";
 import { FiLogIn, FiLogOut } from "react-icons/fi";
+import { FaRegUserCircle } from "react-icons/fa";
 import {
   FaHome,
   FaInfoCircle,
@@ -19,9 +20,10 @@ import LOGO from "../../logo.jpg";
 const Header = () => {
   const [btnNameReact, setbtnNameReact] = useState("Login");
   const onlinestatus = useOnlineStatus();
+  const cartItems = useSelector((store) => store.cart.items);
 
   // Fetching cart items from the Redux store
-  const cartItems = useSelector((store) => store.cart.items);
+  // const cartItems = useSelector((store) => store.cart.items);
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
@@ -72,26 +74,22 @@ const Header = () => {
             >
               <FaShoppingCart className="text-2xl" />
               <span>Cart</span>
+              <sup className="text-white  text-sm inline-block text-center  size-5 rounded-xl bg-orange-500">
+                {cartItems.length}
+              </sup>
             </Link>
           </li>
-          <div className="flex items-center space-x-4">
-            <button
-              className="flex items-center px-4 py-2 border border-orange-500 text-orange-500 font-semibold rounded-full hover:bg-orange-500 hover:text-white transition duration-300"
-              onClick={() =>
-                setbtnNameReact(btnNameReact === "Login" ? "Logout" : "Login")
-              }
+          <li>
+            <Link
+              to="/signin"
+              className="flex items-center space-x-2 text-lg font-semibold text-gray-700 hover:text-orange-500 hover:underline underline-offset-4 transition duration-300 ease-in-out"
             >
-              {btnNameReact === "Login" ? (
-                <FiLogIn className="mr-2 text-lg" />
-              ) : (
-                <FiLogOut className="mr-2 text-lg" />
-              )}
-              {btnNameReact}
-            </button>
+              <FaRegUserCircle className="text-2xl" />
+              <span>sign In</span>
+            </Link>
+          </li>
 
-            {/* Displaying logged-in user */}
-            {/* <span className="text-gray-700 font-medium">{loggedInUser}</span> */}
-          </div>
+         
         </ul>
       </nav>
     </header>

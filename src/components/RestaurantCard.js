@@ -1,5 +1,6 @@
 import React from "react";
 import { CDN_URL } from "../utils/constants";
+import { FaStar } from "react-icons/fa";
 
 const RestaurantCard = ({ resData }) => {
   const {
@@ -44,6 +45,7 @@ const RestaurantCard = ({ resData }) => {
             {name}
           </h4>
           <h4 className="font-semibold text-sm sm:text-[16px] lg:text-[18px]">
+            <FaStar className="inline bg-green-500 text-white px-1 rounded-full" />
             {avgRatingString}
             <i className="ri-star-fill text-[#14883f] text-sm sm:text-[15px] lg:text-[18px] pl-2 align-top"></i>
           </h4>
@@ -51,7 +53,7 @@ const RestaurantCard = ({ resData }) => {
 
         <div className="sm:flex justify-between">
           <p className="text-[12px] lg:text-[14px] text-[#02060c] opacity-[60%] ">
-            {cuisines.slice(0, 2).join(" , ")}
+            🍴{cuisines.slice(0, 2).join(" , ")}
           </p>
           <p className="text-[12px] lg:text-[14px] text-[#02060c] opacity-[60%]">
             {costForTwo}
@@ -59,11 +61,11 @@ const RestaurantCard = ({ resData }) => {
         </div>
 
         <p className="text-[12px] lg:text-[14px] text-[#02060c] opacity-[60%] py-[4px] lg:py-[6px]">
-          {areaName.split(" ").slice(0, 2).join(" ")}
+          🛐{areaName.split(" ").slice(0, 2).join(" ")}
         </p>
 
         <div className="flex justify-between">
-          <h4 className="text-[12px] lg:text-[14px]">{sla?.slaString}</h4>
+          <h4 className="text-[12px] lg:text-[14px]">⏰{sla?.slaString}</h4>
           <h4 className="text-[12px] lg:text-[14px]">
             {sla?.lastMileTravel} km
           </h4>

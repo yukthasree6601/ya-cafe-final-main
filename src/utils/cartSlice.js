@@ -14,8 +14,7 @@ const cartSlice = createSlice({
       state.items = state.items.filter((item) => item.id !== action.payload.id);
     },
     clearCart: (state) => {
-      // Corrected the typo
-      return { items: [] };
+      state.items = []; // More concise, consistent with other reducers
     },
   },
 });
